@@ -82,15 +82,7 @@ class C3Chart extends React.Component {
   }
 
   updateChart(config) {
-    if (!this.chart) {
       this.chart = this.generateChart(findDOMNode(this), config);
-    }
-
-    if (config.unloadBeforeLoad) {
-        this.unloadData();
-    }
-
-    this.loadNewData(config.data);
   }
 
   render() {
