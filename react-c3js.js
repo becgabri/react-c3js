@@ -84,15 +84,7 @@ var C3Chart = function (_React$Component) {
   }, {
     key: 'updateChart',
     value: function updateChart(config) {
-      if (!this.chart) {
         this.chart = this.generateChart((0, _reactDom.findDOMNode)(this), config);
-      }
-
-      if (config.unloadBeforeLoad) {
-        this.unloadData();
-      }
-
-      this.loadNewData(config.data);
     }
   }, {
     key: 'render',
